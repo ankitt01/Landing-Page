@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-container {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  background-image: url("img/heroimage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-container .above-overlay {
+  position: relative;
+  padding: 0 2em;
+}
+
+.hero-container .logo {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-family: "Lora", serif;
+}
+
+.hero-container .logo span {
+  color: #309740;
+  font-size: 55px;
+}
+
+.hero-container .right-header {
+  font-family: "Montserrat", sans-serif;
+  font-family: 30px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  padding: 5px 7px;
+}
+
+.hero-container .right-header a {
+  color: #309740;
+  margin-right: 20px;
+  padding-top: 7px;
+}
+
+.hero-container .right-header i {
+  color: white;
+  cursor: pointer;
+}
+
+.hero-container .hero-body {
+  margin: 200px 20px 200px 10px;
+  color: white;
+  line-height: 1.5;
+}
+
+.hero-container .hero-body .heading {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.hero-container .hero-body button {
+  padding: 1em;
+  background-color: black;
+  border: 1px solid white;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.hero-container .hero-body button a {
+  color: white;
+}
+
+.hero-container .hero-body span {
+  color: #818586;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=style.css.map */

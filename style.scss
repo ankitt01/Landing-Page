@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@500;700&display=swap');
+
+// font-family: 'Lora', serif;
+// font-family: 'Montserrat', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+$myFont: 'Montserrat', sans-serif;
+$Logo: 'Lora', serif;
+$mainAccent: rgb(48,151,64);
+
+body {
+    font-family: $myFont;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+//HERO CONTAINER -->
+
+.hero-container {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    background-image: url('img/heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .above-overlay {
+        position: relative;
+        padding: 0 2em;
+    }
+    .logo {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        font-family: $Logo;
+        span {
+            color: $mainAccent;
+            font-size: 55px;
+        }
+    }
+    .right-header {
+        font-family: $myFont;
+        font-family: 30px;
+        letter-spacing: 4px;
+        font-weight: 700;
+        float: right;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: black;
+        padding: 5px 7px;
+
+        a{
+            color: $mainAccent;
+            margin-right: 20px;
+            padding-top: 7px;
+        }
+        i {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .hero-body {
+        margin: 200px 20px 200px 10px;
+        color: white;
+        line-height: 1.5;
+
+        .heading {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 1em;
+            background-color: black;
+            border: 1px solid white;
+            width: 300px;
+            margin-bottom: 20px;
+            a {
+                color: white;
+            }
+        }
+        span {
+            color: rgb(129,133,134);
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+    }
+}
