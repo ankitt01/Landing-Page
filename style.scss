@@ -26,7 +26,9 @@ a {
     text-decoration: none;
     color: black;
 }
-
+#close {
+    cursor: pointer;
+}
 
 
 //HERO CONTAINER -->
@@ -35,10 +37,11 @@ a {
     position: relative;
     background-color: black;
     height: 100vh;
+    width: 100vw;
     background-image: url('img/heroimage.jpg');
     background-size: cover;
     background-position: center;
-
+    margin-bottom: 100vh;
     nav {
         width: 280px;
         height: 100vh;
@@ -48,6 +51,8 @@ a {
         background-color: black;
         padding: 2em;
         z-index: 99;
+        transform: translateX(100%);
+        transition: 500ms;
 
         .nav-header {
             display: flex;
@@ -119,7 +124,6 @@ a {
         font-family: 30px;
         letter-spacing: 4px;
         font-weight: 700;
-        float: right;
         display: flex;
         align-self: center;
         justify-content: center;
@@ -141,13 +145,13 @@ a {
     }
 
     .hero-body {
-        margin: 200px 20px 200px 10px;
+        // margin: 100px 20px 200px 10px;
         color: white;
         line-height: 1.5;
         position: relative;
 
         .heading {
-            font-size: 35px;
+            font-size: 25px;
             margin-bottom: 20px;
         }
         button {
