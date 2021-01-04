@@ -9,4 +9,5 @@ const close = document.getElementById('close').addEventListener('click', () => {
 const open = document.getElementById('open').addEventListener('click', () => {
     console.log('clicked')
     nav.style.transform = 'translateX(0)'
+    nav.style.display = 'block'
 });
