@@ -33,3 +33,115 @@ a {
 
 //HERO CONTAINER -->
 
+.hero-container {
+    background: url('img/heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+    height: 100vh;
+    margin-bottom: 100vh;
+    padding: 1em;
+    position: relative;
+    
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.above-overlay {
+    background-color: rgb(192, 232, 255);
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            font-size: 32px;
+            font-family: $Logo;
+            color: white;
+    
+            span {
+                color: $mainAccent;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+
+
+            a {
+                color: $mainAccent;
+            }
+            i {
+                color: white;
+                font-size: 22px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .nav {
+        display: none;
+        background-color: black;
+        position: absolute;
+        width: 280px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 1em 2em;
+        transform: translateX(100%);
+        transition: 250ms;
+
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em 0em;
+            color: white;
+
+            span {
+                color: $mainAccent;
+                font-weight: bold;
+                letter-spacing: 3px;
+            }
+        }
+        .nav-links {
+            list-style: none;
+            color: white;
+
+            .links {
+                margin: 1em 0;
+                font-size: 20px;
+
+                a{
+                    color: white;
+                }
+            }
+        }
+
+        p {
+            color: rgb(88, 88, 88);
+            margin: 50px 0;
+            font-size: 14px;
+            line-height: 1.5;
+
+            span {
+                color: rgb(187, 187, 187);
+                cursor: pointer;
+            }
+        }
+        i {
+            color: rgb(95, 95, 95);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+}

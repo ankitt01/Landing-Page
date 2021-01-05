@@ -23,4 +23,134 @@ a {
 #close {
   cursor: pointer;
 }
+
+.hero-container {
+  background: url("img/heroimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: pink;
+  height: 100vh;
+  margin-bottom: 100vh;
+  padding: 1em;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.above-overlay {
+  background-color: #c0e8ff;
+  padding: 1em;
+  position: relative;
+  z-index: 2;
+}
+
+.above-overlay .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.above-overlay .header .logo {
+  font-size: 32px;
+  font-family: "Lora", serif;
+  color: white;
+}
+
+.above-overlay .header .logo span {
+  color: #309740;
+}
+
+.above-overlay .header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.above-overlay .header .right a {
+  color: #309740;
+}
+
+.above-overlay .header .right i {
+  color: white;
+  font-size: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.above-overlay .nav {
+  display: none;
+  background-color: black;
+  position: absolute;
+  width: 280px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1em 2em;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.above-overlay .nav .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 0em;
+  color: white;
+}
+
+.above-overlay .nav .nav-header span {
+  color: #309740;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.above-overlay .nav .nav-links {
+  list-style: none;
+  color: white;
+}
+
+.above-overlay .nav .nav-links .links {
+  margin: 1em 0;
+  font-size: 20px;
+}
+
+.above-overlay .nav .nav-links .links a {
+  color: white;
+}
+
+.above-overlay .nav p {
+  color: #585858;
+  margin: 50px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.above-overlay .nav p span {
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.above-overlay .nav i {
+  color: #5f5f5f;
+  margin-right: 10px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
