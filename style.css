@@ -34,7 +34,6 @@ a {
   background-position: center;
   background-color: pink;
   height: 100vh;
-  margin-bottom: 100vh;
   padding: 1em;
   position: relative;
 }
@@ -113,6 +112,7 @@ a {
           transform: translateX(100%);
   -webkit-transition: 250ms;
   transition: 250ms;
+  z-index: 9999;
 }
 
 .above-overlay .nav .nav-header {
@@ -222,5 +222,50 @@ a {
   margin-right: 10px;
   color: #309740;
   font-size: 17px;
+}
+
+#about {
+  background-color: #3ed655;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+#about .div1 {
+  padding: 2em 0;
+}
+
+#about .div1 span {
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: black;
+}
+
+#about .div1 h1 {
+  color: #f5fff6;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 15px;
+}
+
+#about .div2 {
+  line-height: 1.5;
+  color: #313131;
+  padding: 0 1em;
+  margin-bottom: 2em;
+  font-size: 20px;
+}
+
+#about .div3 .stats {
+  padding: 2em;
+}
+
+#about .div3 .stats .number {
+  font-size: 60px;
+  color: #f5fff6;
+  margin-bottom: 1px;
+}
+
+#about .div3 .stats p {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

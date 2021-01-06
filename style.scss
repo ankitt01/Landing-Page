@@ -17,6 +17,7 @@ html {
 $myFont: 'Montserrat', sans-serif;
 $Logo: 'Lora', serif;
 $mainAccent: rgb(48,151,64);
+$lightAccent: rgb(62, 214, 85);
 
 body {
     font-family: $myFont;
@@ -41,7 +42,6 @@ a {
     background-position: center;
     background-color: pink;
     height: 100vh;
-    margin-bottom: 100vh;
     padding: 1em;
     position: relative;
     
@@ -105,6 +105,7 @@ a {
         padding: 1em 2em;
         transform: translateX(100%);
         transition: 250ms;
+        z-index: 9999;
 
         .nav-header {
             display: flex;
@@ -204,4 +205,47 @@ a {
             }
         }
     }
+}
+
+#about {
+    background-color: $lightAccent;
+    padding: 3em 1em;
+    text-align: center;
+
+    .div1 {
+        padding: 2em 0;
+
+        span {
+           letter-spacing: 1px; font-weight: 700;
+           color: black;
+        }
+        h1 {
+            color: rgb(245, 255, 246);
+            font-size : 50px;
+            font-weight: 700;
+            margin: 15px;
+        }
+    }
+    .div2 {
+        line-height: 1.5;
+        color: rgb(49, 49, 49);
+        padding: 0 1em;
+        margin-bottom: 2em;
+        font-size: 20px;
+    }
+    .div3 {
+        .stats {
+            padding: 2em;
+
+            .number {
+                font-size: 60px;
+                color:  rgb(245, 255, 246);
+                margin-bottom: 1px;
+            }
+            p {
+                font-weight: 700;
+            }
+        }
+    }
+
 }
