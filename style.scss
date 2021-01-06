@@ -29,7 +29,9 @@ a {
 #close {
     cursor: pointer;
 }
-
+#open {
+    position: fixed;
+}
 
 //HERO CONTAINER -->
 
@@ -53,7 +55,8 @@ a {
     bottom: 0;
 }
 .above-overlay {
-    background-color: rgb(192, 232, 255);
+    // background-color: rgb(192, 232, 255);
+    height: 100%;
     padding: 1em;
     position: relative;
     z-index: 2;
@@ -74,15 +77,18 @@ a {
         .right {
             display: flex;
             align-items: center;
-
-
+            justify-content: center;
+            background-color: black;
+            width: 37px;
+            height: 37px;
+            position: fixed;
+            right: 20px;
             a {
                 color: $mainAccent;
             }
             i {
                 color: white;
                 font-size: 22px;
-                margin-left: 10px;
                 cursor: pointer;
             }
         }
@@ -90,9 +96,8 @@ a {
     }
 
     .nav {
-        display: none;
         background-color: black;
-        position: absolute;
+        position: fixed;
         width: 280px;
         right: 0;
         top: 0;
@@ -142,6 +147,61 @@ a {
             color: rgb(95, 95, 95);
             margin-right: 10px;
             cursor: pointer;
+        }
+    }
+
+    .hero-body {
+        // background-color: #fff;
+        position: relative;
+        height: 80%;
+        text-align: center;
+        .head {
+            padding: 6em 5px 4em ;
+            text-align: center;
+            line-height: 1.4;
+            font-weight: bold;
+            color: rgb(219, 219, 219);
+            span {
+                color: #959595;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .heading {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+        }
+        button {
+            width: 280px;
+            padding: 1em;
+            background-color: black;
+            border: 1px solid white;
+            margin-bottom: 20px;
+            a {
+                color: white;
+            }
+        }
+
+        .social-icons {
+            color: white;
+            font-size: 20px;
+            i {
+                margin-right: 10px;
+
+            }
+        }
+        .scroll {
+            position: absolute;
+            color: white;
+            bottom: -90px;
+            right: 0;
+            font-size: 12px;
+            i {
+                margin-right: 10px;
+                color: $mainAccent;
+                font-size: 17px;
+            }
         }
     }
 }
