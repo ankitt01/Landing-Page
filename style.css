@@ -175,7 +175,7 @@ a {
   text-align: center;
   line-height: 1.4;
   font-weight: bold;
-  color: #dbdbdb;
+  color: #f4fdf5;
 }
 
 .above-overlay .hero-body .head span {
@@ -238,13 +238,13 @@ a {
   letter-spacing: 1px;
   font-weight: 700;
   color: black;
+  margin-bottom: 10px;
 }
 
 #about .div1 h1 {
-  color: #f5fff6;
+  color: #f4fdf5;
   font-size: 50px;
   font-weight: 700;
-  margin: 15px;
 }
 
 #about .div2 {
@@ -261,11 +261,68 @@ a {
 
 #about .div3 .stats .number {
   font-size: 60px;
-  color: #f5fff6;
+  color: #f4fdf5;
   margin-bottom: 1px;
 }
 
 #about .div3 .stats p {
   font-weight: 700;
+}
+
+#services {
+  padding: 3em 1em;
+  background-color: #f4fdf5;
+  text-align: center;
+}
+
+#services .head span {
+  color: #309740;
+  font-weight: bold;
+}
+
+#services .head h1 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+#services .tiles .tile {
+  padding: 1em;
+  line-height: 1.7;
+  margin-top: 50px;
+}
+
+#services .tiles .tile i {
+  color: #309740;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+#works {
+  position: relative;
+}
+
+#works .black {
+  height: 50vh;
+  width: 100vh;
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+}
+
+#works .data {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+#works .data span {
+  color: #309740;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#works .data h1 {
+  color: #f4fdf5;
+  font-size: 35px;
 }
 /*# sourceMappingURL=style.css.map */

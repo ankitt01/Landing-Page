@@ -18,6 +18,7 @@ $myFont: 'Montserrat', sans-serif;
 $Logo: 'Lora', serif;
 $mainAccent: rgb(48,151,64);
 $lightAccent: rgb(62, 214, 85);
+$offWhite: rgb(244, 253, 245);
 
 body {
     font-family: $myFont;
@@ -161,7 +162,7 @@ a {
             text-align: center;
             line-height: 1.4;
             font-weight: bold;
-            color: rgb(219, 219, 219);
+            color: $offWhite;
             span {
                 color: #959595;
                 font-weight: bold;
@@ -216,14 +217,15 @@ a {
         padding: 2em 0;
 
         span {
-           letter-spacing: 1px; font-weight: 700;
+           letter-spacing: 1px; 
+           font-weight: 700;
            color: black;
+           margin-bottom: 10px;
         }
         h1 {
-            color: rgb(245, 255, 246);
+            color: $offWhite;
             font-size : 50px;
             font-weight: 700;
-            margin: 15px;
         }
     }
     .div2 {
@@ -239,7 +241,7 @@ a {
 
             .number {
                 font-size: 60px;
-                color:  rgb(245, 255, 246);
+                color: $offWhite;
                 margin-bottom: 1px;
             }
             p {
@@ -248,4 +250,62 @@ a {
         }
     }
 
+}
+
+#services {
+    padding: 3em 1em;
+    background-color: $offWhite;
+    text-align: center;
+    .head {
+        span {
+            color: $mainAccent;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 35px;
+            font-weight: 400;
+        }
+    }
+    .tiles {
+
+        .tile {
+            padding: 1em;
+            line-height: 1.7;
+            margin-top: 50px;
+
+            i {
+                color: $mainAccent;
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+#works {
+    position: relative;
+
+    .black {
+        height: 50vh;
+        width: 100vh;
+        background-color: black;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .data {
+        text-align: center;
+        padding: 6rem 2rem;
+        span {
+            color: $mainAccent;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: $offWhite;
+            font-size: 35px;
+        }
+    }
 }
