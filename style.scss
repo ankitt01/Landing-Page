@@ -47,112 +47,112 @@ a {
     padding: 1em;
     position: relative;
     
-}
-.overlay {
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-.above-overlay {
-    // background-color: rgb(192, 232, 255);
-    height: 100%;
-    padding: 1em;
-    position: relative;
-    z-index: 2;
-    .header {
-        display: flex;
-        justify-content: space-between;
 
-        .logo {
-            font-size: 32px;
-            font-family: $Logo;
-            color: white;
-    
-            span {
-                color: $mainAccent;
-            }
-        }
-
-        .right {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-            width: 37px;
-            height: 37px;
-            position: fixed;
-            right: 20px;
-            a {
-                color: $mainAccent;
-            }
-            i {
-                color: white;
-                font-size: 22px;
-                cursor: pointer;
-            }
-        }
-
-    }
-
-    .nav {
-        background-color: black;
-        position: fixed;
-        width: 280px;
-        right: 0;
+    .overlay {
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
         top: 0;
+        right: 0;
+        left: 0;
         bottom: 0;
-        padding: 1em 2em;
-        transform: translateX(100%);
-        transition: 250ms;
-        z-index: 9999;
-
-        .nav-header {
+    }
+    .above-overlay {
+        // background-color: rgb(192, 232, 255);
+        height: 100%;
+        padding: 1em;
+        position: relative;
+        z-index: 2;
+        .header {
             display: flex;
             justify-content: space-between;
-            padding: 2em 0em;
-            color: white;
 
-            span {
-                color: $mainAccent;
-                font-weight: bold;
-                letter-spacing: 3px;
-            }
-        }
-        .nav-links {
-            list-style: none;
-            color: white;
-
-            .links {
-                margin: 1em 0;
-                font-size: 20px;
-
-                a{
-                    color: white;
+            .logo {
+                font-size: 32px;
+                font-family: $Logo;
+                color: white;
+        
+                span {
+                    color: $mainAccent;
                 }
             }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                width: 37px;
+                height: 37px;
+                position: fixed;
+                right: 20px;
+                a {
+                    color: $mainAccent;
+                }
+                i {
+                    color: white;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+
         }
 
-        p {
-            color: rgb(88, 88, 88);
-            margin: 50px 0;
-            font-size: 14px;
-            line-height: 1.5;
+        .nav {
+            background-color: black;
+            position: fixed;
+            width: 280px;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding: 1em 2em;
+            transform: translateX(100%);
+            transition: 250ms;
+            z-index: 9999;
 
-            span {
-                color: rgb(187, 187, 187);
+            .nav-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 2em 0em;
+                color: white;
+
+                span {
+                    color: $mainAccent;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                }
+            }
+            .nav-links {
+                list-style: none;
+                color: white;
+
+                .links {
+                    margin: 1em 0;
+                    font-size: 20px;
+
+                    a{
+                        color: white;
+                    }
+                }
+            }
+
+            p {
+                color: rgb(88, 88, 88);
+                margin: 50px 0;
+                font-size: 14px;
+                line-height: 1.5;
+
+                span {
+                    color: rgb(187, 187, 187);
+                    cursor: pointer;
+                }
+            }
+            i {
+                color: rgb(95, 95, 95);
+                margin-right: 10px;
                 cursor: pointer;
             }
         }
-        i {
-            color: rgb(95, 95, 95);
-            margin-right: 10px;
-            cursor: pointer;
-        }
     }
-
     .hero-body {
         // background-color: #fff;
         position: relative;
@@ -326,9 +326,11 @@ a {
         width: 80%;
         margin: 0 auto;
         margin-bottom: 50px;
+        display: grid;
 
         img {
             width: 100%;
+            max-width: 370px;
             object-fit: cover;
             position: relative;
             cursor: pointer;
@@ -349,13 +351,175 @@ a {
     padding: 6rem 0;
     .head {
         text-align: center;
+        padding: 0 1em;
         span {
             color: $mainAccent;
             font-weight: bold;
         }
         h1 {
-            font-size: 30px;
+            font-size: 27px;
             font-weight: 400;
+            margin-top: 10px;
         }
     }
+    #wrapper {
+        width: 80%;
+        max-width: 964px;
+        position: relative;
+        margin:  50px auto;
+        padding: 0 1em;
+      }
+      
+      #carousel {
+        overflow: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+      
+      #carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      
+      #prev,
+      #next {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: white;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        outline: 0;
+        cursor: pointer;
+        position: absolute;
+      }
+      
+      #prev {
+        top: 50%;
+        left: 0;
+        transform: translate(50%, -50%);
+        display: none;
+      }
+      
+      #next {
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+      }
+      
+      #content {
+        display: grid;
+        grid-gap: 16px;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      
+      .item {
+        width: 100px;
+        height: 100px;
+      }
+}
+
+
+
+#contact {
+    background-image: url('img/contact-bg.jpg');
+    padding: 6rem 0em 1rem 0;
+    position: relative;
+    
+
+    .overlay {
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .above-overlay {
+        position: relative;
+        z-index: 1;
+        .head {
+            text-align: center;
+            padding: 0 1em;
+            span {
+                color: $mainAccent;
+                font-weight: bold;
+            }
+            h1 {
+                font-size: 27px;
+                font-weight: 400;
+                margin-top: 10px;
+                color: white;
+            }
+        }
+
+        .form {
+            background-color: rgba(0,0,0,0.6);
+            margin: 50px 0;
+            padding: 1em;
+            text-align: center;
+
+            form {
+                input {
+                    padding: 1em;
+                    width: 90%;
+                    background-color: rgba(0,0,0,0.6);
+                    border: none;
+                    border-bottom: 1px solid rgb(155, 155, 155);
+                    margin-bottom: 10px;
+                    color: white;
+                    outline: none;
+                }
+
+                input:focus {
+                    border-color: $mainAccent;
+                }
+
+                button {
+                    background-color: $mainAccent;
+                    width: 80%;
+                    padding: 1.2em 1em;
+                    color: white;
+                    letter-spacing: 1px;
+                    border: none;
+                    margin: 20px 0;
+                }
+            }
+
+        }
+
+        .where {
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+            .info {
+                margin-bottom: 50px;
+                line-height: 1.5;
+                span {
+                    color: $mainAccent;
+                }
+                p {
+                    color: rgb(139, 139, 139);
+                }
+            }
+
+            .social-icons {
+                color: $offWhite;
+                i {
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+
+    
+}
+
+footer {
+    text-align: center;
+    color: rgb(136, 136, 136);
 }
