@@ -474,8 +474,14 @@ a {
             margin: 50px 0;
             padding: 1em;
             text-align: center;
+            span {
+                color: white;
+                margin-bottom: 10px;
+            }
 
             form {
+                display: grid;
+                grid-template-columns: 1fr;
                 input {
                     padding: 1em;
                     width: 90%;
@@ -485,6 +491,8 @@ a {
                     margin-bottom: 10px;
                     color: white;
                     outline: none;
+                    max-width: 700px;
+                    margin: auto;
                 }
 
                 input:focus {
@@ -498,7 +506,9 @@ a {
                     color: white;
                     letter-spacing: 1px;
                     border: none;
-                    margin: 20px 0;
+                    max-width: 700px;
+                    margin: auto;
+                    margin-top: 20px;
                 }
             }
 
@@ -710,6 +720,19 @@ footer {
             }
         }
     }
+    #clients {
+
+        #wrapper {
+            width: 35%;
+        }
+    }
+
+    #contact {
+        form {
+
+        }
+    }
+    
 
 }
 
@@ -737,6 +760,12 @@ footer {
         }
         .image-gallary {
             width: 55%;
+        }
+    }
+    #clients {
+
+        #wrapper {
+            width: 25%;
         }
     }
 }
