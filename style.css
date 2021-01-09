@@ -29,6 +29,30 @@ a {
   position: fixed;
 }
 
+.top {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 2;
+  bottom: 15px;
+  right: 15px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top i {
+  color: black;
+  font-size: 20px;
+}
+
 .hero-container {
   background: url("img/heroimage.jpg");
   background-size: cover;
@@ -37,6 +61,7 @@ a {
   height: 100vh;
   padding: 1em;
   position: relative;
+  z-index: 3;
 }
 
 .hero-container .overlay {
@@ -618,6 +643,15 @@ footer {
   }
   .hero-container .hero-body .social-icons i {
     margin-bottom: 20px;
+  }
+  .top {
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 25px;
+  }
+  .top i {
+    font-size: 30px;
   }
   #about .div3 {
     display: -webkit-box;
